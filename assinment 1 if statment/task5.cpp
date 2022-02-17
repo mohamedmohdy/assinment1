@@ -1,3 +1,13 @@
+/*
+Write a program to convert specified days into years, weeks and days.
+● Test Data : Number of days : 1329
+● Expected Output :
+Years: 3
+Weeks: 33
+Days: 3
+*/
+
+
 #include <iostream>
 using namespace std;
 int main()
