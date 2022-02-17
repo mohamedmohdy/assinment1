@@ -1,0 +1,469 @@
+
+// task1
+//Write a program that allow to user enter number then print it
+//Example
+//Input 5
+//Output 5
+/*
+#include <iostream>
+using namespace std;
+int main()
+{
+	int numper;
+	cout<<"please add your numper " ;
+	cin>>numper;
+	cout<<numper;	
+}
+*/		
+//________________________________________________________________________________________________________
+/*
+task2
+write a program that ask user to insert 3 numbers then print the sum
+? input
+Please enter first number:
+5
+Please enter second number
+3
+Please enter third number
+4
+? output
+Summation of 3 integers is 12
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int numper1 , numper2 , numper3 ;
+	cout<<"please enter your first numper : ";
+	cin>>numper1;
+	cout<<"please enter your second numper : ";
+	cin>>numper2;
+	cout<<"please enter your thired numper : ";
+	cin>>numper3;
+	
+	cout<<"result sum is : "<<numper1+numper2+numper3;	
+}
+
+__________________________________________________________________________________________________________________
+
+task3
+write a program that ask user to insert 3 integers then print the average as
+decimal number
+? input
+Please enter first number:
+6
+Please enter second number
+4
+Please enter third number
+4
+? output
+The average = 4.66667
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int numper1 , numper2 , numper3 , sum = 0  ;
+	double avg ;
+	cout<<"please enter your first numper : ";
+	cin>>numper1;
+	cout<<"please enter your second numper : ";
+	cin>>numper2;
+	cout<<"please enter your thired numper : ";
+	cin>>numper3;
+	
+	sum = numper1+numper2+numper3;
+	avg = sum / 3.0 ;
+	cout<<"result avarge is : "<<avg;	
+}
+
+______________________________________________________________________________________________________________________
+
+task4
+Write a program to compute the perimeter and area of a rectangle. Your code
+should ask user to insert the width and the height
+? input(example)
+Width = 5
+Height = 3
+? Output
+The perimeter = 16
+The area = 15
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int width , height , parameter , area;
+	
+	cout<<"please enter your width :";
+	cin>>width;
+	cout<<"please enter your height :";
+	cin>>height;
+	
+	parameter = ( height + width ) * 2 ;
+	area =  height * width ;
+	
+	
+	cout<<"result parameter is : "<< parameter <<endl;
+	cout<<"result area is : "<< area ;
+		
+}		
+____________________________________________________________________________________________________________________________
+
+task5
+Write a program to convert specified days into years, weeks and days.
+? Test Data : Number of days : 1329
+? Expected Output :
+Years: 3
+Weeks: 33
+Days: 3
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	 int days, years, weeks;
+
+    days = 1329; 
+
+    // Converts days to years, weeks and days
+    years = days/365; 
+    weeks = (days % 365)/7;
+    days = days- ((years*365) + (weeks*7));
+    
+    cout<<"years is : "<< years <<endl;
+    cout<<"weeks is : "<< weeks <<endl;
+	cout<<"days  is : "<< days <<endl;
+	
+}
+____________________________________________________________________________________________________________________________
+
+task6
+Write a program that take number from user then print yes if that number can
+divide by 3 and 4 otherwise print no
+? Example1
+Input 12
+Output Yes
+? Example 2
+Input 9
+Output No
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int numper ;
+	cin>>numper;
+	
+	if((numper%2==0) && (numper%3==0))
+		{
+			cout<<"yes";
+		}
+	else
+		{
+			cout<<"no";
+		}
+	
+	
+	
+	
+	
+	
+}
+
+__________________________________________________________________________________________________________________________________
+task7
+7. Write a program that allows the user to insert an integer then print negative if it
+is a negative number otherwise print positive.
+? Example
+Input -5
+Output negative
+? Example2
+Input 10
+Output positive
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int numper ;
+	
+	cout<<"please add your numper : ";
+	cin>>numper;
+	
+	if(numper >= 0  )
+		{
+			cout<<"postive";
+		}
+	else
+		cout<<"negative";
+	
+	
+}
+_______________________________________________________________________________________________________________________
+task8
+Write a program that reads 5 numbers and sum of all odd values between
+them.
+? Test Data :
+Input the first number: 11
+Input the second number: 17
+Input the third number: 13
+Input the fourth number: 12
+Input the fifth number: 5
+? Expected Output:
+Sum of all odd values: 46
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int numper1 , numper2 , numper3 , numper4 , numper5 ;
+	cin>>numper1>>numper2>>numper3>>numper4>>numper5;
+	
+	if((numper1%2==1)  ||  (numper2%2==1)  || (numper3%2==1) || (numper4%2==1) || (numper5%2==1) )
+		{
+			if(numper1%2==0)
+				{
+					numper1 = 0 ;	
+				}	
+			else if (numper2%2==0)
+				{
+					numper2 = 0 ;
+				}
+			else if (numper3%2==0)
+				{
+					numper3 = 0 ;
+				}
+			else if (numper4 %2==0)
+				{
+					numper4 = 0 ;
+				}
+			else 
+				{
+					numper5 = 0 ; 
+				}
+			
+			cout<<numper1+numper2+numper3+numper4+numper5;
+	}
+		else
+			cout<<"all numper is even";
+		
+		 } 		
+		
+	___________________________________________________________________________________________________________
+	task9
+	
+	Search for Switch Case and use it to write a program that reads an
+integer between 1 and 12 and print the month of the year in English.
+? Test Data :
+Input a number between 1 to 12 to get the month name: 8
+? Expected Output:
+August
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int numper ;
+	
+	cout<<"enter your numper : ";
+	cin>>numper;
+	
+	
+	if(numper >= 1  &&  numper <= 12 )
+		{
+			switch(numper)
+				{	
+					case 1 :
+						cout<<"junary";
+					break;
+				case 2 :
+						cout<<"Febrair";
+					break;
+				case 3 :
+						cout<<"Marsh";
+					break;
+				case 4 :
+						cout<<"Abril";
+					break;
+				case 5 :
+						cout<<"Mayo";
+					break;
+				case 6 :
+						cout<<"June";
+					break;
+				case 7 :
+						cout<<"July";
+					break;
+				case 8 :
+						cout<<"August";
+					break;
+				case 9 :
+						cout<<"September";
+					break;
+				case 10 :
+						cout<<"October";
+					break;
+				case 11 :
+						cout<<"November";
+					break;
+				case 12 :
+						cout<<"December";
+					break;
+			
+			}
+		}
+	else
+		cout<<"error numper plesse add your numper between 1 and 12 ^_^ ";
+		
+	}
+
+_________________________________________________________________________________________________________________________
+task 10
+Write a program to convert a given integer (in seconds) to hours,
+minutes and seconds.
+? Test Data :
+Input seconds: 25300
+? Expected Output:
+H:M:S - 7:1:40
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int sec, h , m , s ;
+	
+	cout<<"input second : ";
+	cin>>sec ;
+	
+	h = sec / 3600 ;
+	m = (sec - (3600*h)) / 60 ;
+	s = (sec - (3600*h) - (m*60) );
+	
+	cout<<" H : M : S  = : "<< h << " : " << m <<" : " << s ;   
+		
+	}
+_____________________________________________________________________________________________________________
+task 11
+11.Search for ternary operator and use it to write a program that allows the
+user to insert integer number then Even or Odd
+? Example
+Input 8
+Output even
+? Example 2
+Input 7
+Output odd
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int numper ;
+	
+	string result ;
+	
+	cout<<"enter your numper : ";
+	cin>>numper;
+	
+	result = numper%2==0 ?"even" :"odd";
+	
+	cout<<"result : "<<result; 	
+		
+		
+		
+	}
+	
+_____________________________________________________________________________________________
+task12
+Write a program that take character from user then if it is vowel chars (a,e,I,o,u)
+then print vowel otherwise print consonant
+? Example
+Input o
+Output vowel
+? Example 2
+Input b
+Output consonant
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	char charcter ;
+	
+	cout<<"please enter charcter : ";
+	cin>>charcter;
+	
+	if(charcter == 'a' ||  charcter == 'e' || charcter == 'i' || charcter == 'o' || charcter == 'u') 
+		{
+			cout<<"Vowel";	
+		}	
+	else
+		{
+			cout<<"Constant";
+		}
+		
+		
+	}
+________________________________________________________________________________________
+task 13 
+13.Write a program that take 3 integer from user then print the max element and
+the min element.
+? Example
+Input 7 8 5
+Output
+max element = 8
+min element = 5
+? Example2
+Input 3 6 9
+Output
+Max element = 9
+Min element = 3
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int numper1 , numper2 , numper3 ;
+	
+	cout<<"enter your 3 numper ";
+	cin>>numper1>>numper2>>numper3;
+	
+	if(		(numper1 > numper2)   &&  (numper1 > numper3)  )
+		{
+			if(	(numper2 < numper1)  && (numper2 < numper3)	)
+					{	
+						cout<<" max is : "<<numper1 << " min is : "<<numper2;	
+					}
+			else
+					{
+							cout<<" max is : "<<numper1 << " min is : "<<numper3;
+					}	
+			
+		}	
+	else if (	(numper2 >  numper1) && (numper2 > numper3) ) 
+		{
+			if( (numper3 < numper2)  && (numper3 < numper1) )
+					{
+						cout<<"Max is : "<<numper2 <<" Min is : "<<numper3 ;
+					}
+			else
+					{
+						cout<<"Max is : "<<numper2 <<" Min is : "<<numper1 ;
+					}
+		}
+	else if (	(numper3 > numper1) && (numper3 > numper2)	)
+		{
+			if(	(numper1 < numper2) && (numper1 < numper3)	)
+					{
+						cout<<"Max is : "<<numper3<<" Main is : "<<numper1;
+					}
+			else
+					{
+						cout<<"Max is : "<<numper3<<" Main is : "<<numper2;
+					}
+		}
+		
+}
+
