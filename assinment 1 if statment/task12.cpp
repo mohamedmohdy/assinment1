@@ -1,3 +1,13 @@
+/*
+Write a program that take character from user then if it is vowel chars (a,e,I,o,u)
+then print vowel otherwise print consonant
+● Example
+Input o
+Output vowel
+● Example 2
+Input b
+Output consonant
+*/
 #include <iostream>
 using namespace std;
 int main()
