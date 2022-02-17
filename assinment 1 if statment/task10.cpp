@@ -1,3 +1,12 @@
+/*
+Write a program to convert a given integer (in seconds) to hours,
+minutes and seconds.
+● Test Data :
+Input seconds: 25300
+● Expected Output:
+H:M:S - 7:1:40
+*/
+
 #include <iostream>
 using namespace std;
 int main()
